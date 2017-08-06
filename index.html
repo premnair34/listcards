@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="listApp">
+<head >
+	<title>Photo Api</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="app.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-animate.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</head>
+<body  >
+<div class="container wrapper" ng-controller="listCtrl">	
+	<div class="row">	
+		<div ng-repeat="i in data" class="col-md-3">
+			<div  class="cards" ng-mouseenter="i.over = true" ng-mouseleave="i.over = false">
+				<div ng-hide="i.over">
+					<span class="badge">{{i.title.substr(0,1) | uppercase}}</span>
+					<div class="title">{{i.title}}</div>
+					<div class="bottom">
+						<b>Album: {{i.albumId}}</b>
+					</div>
+				</div>				
+				<div ng-show="i.over" class="img-wrapper">
+					<img ng-src="{{i.thumbnailUrl}}" />
+				</div>
+			</div>			
+		</div>
+	</div>
+</div>
+</body>
+</html>

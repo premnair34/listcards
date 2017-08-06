@@ -1,0 +1,76 @@
+    body{
+    	transition: opacity .3s ease-in;
+    	background: #F2F4F6;
+	}
+
+	.cards{
+		border: 1px solid #ddd;
+	    padding: 10px 0px;
+	    min-height: 200px;
+	    border-radius: 3px;
+	    margin-bottom: 20px;
+	    box-shadow: 2px 2px 6px rgba(0,0,0,.1);
+    	background-color: #fff;
+    	padding-right: 10px;
+  		cursor: pointer;
+	}
+
+	.title{
+		color: #02b5cc;
+	    padding: 0px 0px 0px 60px;
+	    width: 100%;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    word-wrap: break-word;
+	}
+	.badge{
+		color: #fff;
+	    position: absolute;
+	    width: 40px;
+	    height: 40px;
+	    line-height: 36px;
+	    border-radius: 50%;
+	    background-color: #064666;
+	    font-size: 20px;
+	    font-weight: normal;
+	    padding: 0;
+	    left: 25px;
+	    top: 15px;
+	}
+	.wrapper{
+		padding: 40px 0px;
+	}
+	.bottom{
+		position: absolute;
+	    border-top: 1px solid #ddd;
+	    width: 84%;
+	    padding: 10px 10px;
+	    font-size: 14px;
+	    margin: 0 auto;
+	    bottom: 20px;
+	    left: 25px;
+	}
+	.img-wrapper{
+		width: 60%;
+    	margin: 0 auto;
+	}
+
+/*.ng-enter{ 
+    -webkit-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -moz-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -ms-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -o-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space:nowrap;
+} 
+ 
+.ng-enter.ng-enter-active{
+    opacity: 1;
+    width: 150px;
+    height: 30px;
+}
+    */
